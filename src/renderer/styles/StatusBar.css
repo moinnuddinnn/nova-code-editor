@@ -1,0 +1,39 @@
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 22px;
+  background-color: #007acc;
+  color: #ffffff;
+  padding: 0 12px;
+  font-size: 12px;
+}
+
+.status-left,
+.status-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  padding: 2px 8px;
+  cursor: default;
+  transition: background-color 0.1s;
+}
+
+.status-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.status-item.modified {
+  color: #ffeb95;
+}
+
+.status-item.language {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
