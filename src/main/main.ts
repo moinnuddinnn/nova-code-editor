@@ -1,3 +1,6 @@
+
+//!!!!MAIN!!!!!//
+
 import { app, BrowserWindow, ipcMain, dialog, Menu } from 'electron';
 import * as path from 'path';
 import * as fs from 'fs';
@@ -196,4 +199,5 @@ app.on('activate', () => {
     createWindow();
   }
 });
+
 
