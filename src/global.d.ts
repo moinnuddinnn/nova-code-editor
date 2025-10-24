@@ -1,4 +1,4 @@
-/// <reference types="node" />
+///  <reference types="node" />  ///
 
 declare global {
   interface Window {
@@ -10,4 +10,5 @@ declare module '*.css' {
   const content: { [className: string]: string };
   export default content;
 }
+
 
