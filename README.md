@@ -4,15 +4,15 @@ A modern code editor built with Electron and React, inspired by VS Code.
 
 ## Features
 
-✨ **Core Features:**
-- 📝 **Monaco Editor Integration** - The same powerful editor used in VS Code
-- 📁 **File Explorer** - Browse and open files from your workspace
-- 🗂️ **Multi-Tab Support** - Work with multiple files simultaneously
-- 💻 **Integrated Terminal** - Built-in terminal for running commands
-- 🎨 **Syntax Highlighting** - Support for JavaScript, TypeScript, Python, HTML, CSS, and more
-- 💾 **File Operations** - Open, save, and edit files with ease
-- 🎯 **Status Bar** - View file information and editor status
-- 🌙 **Dark Theme** - Beautiful dark theme inspired by VS Code
+**Core Features:**
+- **Monaco Editor Integration** - The same powerful editor used in VS Code
+- **File Explorer** - Browse and open files from your workspace
+- **Multi-Tab Support** - Work with multiple files simultaneously
+- **Integrated Terminal** - Built-in terminal for running commands
+- **Syntax Highlighting** - Support for JavaScript, TypeScript, Python, HTML, CSS, and more
+- **File Operations** - Open, save, and edit files with ease
+- **Status Bar** - View file information and editor status
+- **Dark Theme** - Beautiful dark theme inspired by VS Code
 
 ## Screenshots
 
@@ -156,4 +156,5 @@ MIT License - feel free to use this project for learning or building your own ed
 - Inspired by [Visual Studio Code](https://code.visualstudio.com/)
 - Built with [Monaco Editor](https://microsoft.github.io/monaco-editor/)
 - Terminal powered by [XTerm.js](https://xtermjs.org/)
+
 
