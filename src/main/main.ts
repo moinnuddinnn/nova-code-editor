@@ -1,6 +1,3 @@
-
-//!!!!MAIN!!!!!//
-
 import { app, BrowserWindow, ipcMain, dialog, Menu } from 'electron';
 import * as path from 'path';
 import * as fs from 'fs';
@@ -14,7 +11,6 @@ function createWindow() {
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
-      enableRemoteModule: true,
     },
     frame: true,
     backgroundColor: '#1e1e1e',
@@ -199,5 +195,4 @@ app.on('activate', () => {
     createWindow();
   }
 });
-
 
