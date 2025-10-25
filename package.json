@@ -1,0 +1,60 @@
+{
+  "name": "nova-editor",
+  "version": "1.0.0",
+  "description": "A modern code editor built with Electron and React",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "concurrently \"npm run start:renderer\" \"wait-on http://localhost:3000 && npm run start:electron\"",
+    "start:renderer": "webpack serve --config webpack.renderer.config.js",
+    "start:electron": "electron .",
+    "build": "npm run build:renderer && npm run build:main",
+    "build:renderer": "webpack --config webpack.renderer.config.js --mode production",
+    "build:main": "webpack --config webpack.main.config.js --mode production",
+    "package": "electron-builder"
+  },
+  "keywords": [
+    "code-editor",
+    "electron",
+    "react"
+  ],
+  "author": "Nova",
+  "license": "MIT",
+  "dependencies": {
+    "@monaco-editor/react": "^4.6.0",
+    "monaco-editor": "^0.44.0",
+    "node-pty": "^1.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "xterm": "^5.3.0",
+    "xterm-addon-fit": "^0.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "concurrently": "^8.2.2",
+    "css-loader": "^6.8.1",
+    "electron": "^27.1.0",
+    "electron-builder": "^24.9.1",
+    "html-webpack-plugin": "^5.5.4",
+    "monaco-editor-webpack-plugin": "^7.1.1",
+    "path-browserify": "^1.0.1",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "wait-on": "^7.2.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "build": {
+    "appId": "com.nova.editor",
+    "productName": "Nova Editor",
+    "files": [
+      "dist/**/*"
+    ],
+    "directories": {
+      "output": "release"
+    }
+  }
+}

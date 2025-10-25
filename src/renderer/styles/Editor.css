@@ -1,0 +1,29 @@
+.monaco-editor-wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Monaco editor is already styled, but we can add some overrides */
+.monaco-editor {
+  background-color: #1e1e1e !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.monaco-editor .view-lines {
+  padding-top: 8px;
+}
+
+/* Ensure the editor container has proper dimensions */
+.monaco-editor-wrapper > div {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 400px;
+}
+
+

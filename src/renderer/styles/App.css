@@ -1,0 +1,91 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #252526;
+  border-right: 1px solid #3e3e42;
+  overflow-y: auto;
+}
+
+.editor-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.editor-wrapper {
+  flex: 1;
+  overflow: hidden;
+  background-color: #1e1e1e;
+}
+
+.terminal-wrapper {
+  height: 250px;
+  border-top: 1px solid #3e3e42;
+  overflow: hidden;
+}
+
+.welcome-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+}
+
+.welcome-screen h1 {
+  font-size: 48px;
+  font-weight: 300;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.welcome-screen p {
+  font-size: 18px;
+  color: #858585;
+  margin-bottom: 32px;
+}
+
+.welcome-actions {
+  display: flex;
+  gap: 16px;
+}
+
+.welcome-actions button {
+  padding: 12px 24px;
+  background-color: #0e639c;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.welcome-actions button:hover {
+  background-color: #1177bb;
+}
+
+.welcome-actions button:active {
+  background-color: #0d5a8f;
+}
+
+
