@@ -25,7 +25,7 @@ const App: React.FC = () => {
   const [showExplorer, setShowExplorer] = useState(true);
 
   useEffect(() => {
-    // Listen for file open events from main process
+    //llisten for file open events from main process
     const handleFileOpened = (_event: any, fileData: any) => {
       openFile(fileData.path, fileData.name, fileData.content);
     };
