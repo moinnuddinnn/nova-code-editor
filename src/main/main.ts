@@ -2,6 +2,8 @@ import { app, BrowserWindow, ipcMain, dialog, Menu } from 'electron';
 import * as path from 'path';
 import * as fs from 'fs';
 
+//hhhhhh
+
 let mainWindow: BrowserWindow | null = null;
 
 function createWindow() {
@@ -195,4 +197,5 @@ app.on('activate', () => {
     createWindow();
   }
 });
+
 
