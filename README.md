@@ -5,7 +5,7 @@ A modern code editor built with Electron and React, inspired by VS Code.
 ## Features
 
 **Core Features:**
-- **Monaco Editor Integration** - The same powerful editor used in VS Code
+- **Monaco Editor Integration** - The same powerful editor used in VS Code.
 - **File Explorer** - Browse and open files from your workspace
 - **Multi-Tab Support** - Work with multiple files simultaneously
 - **Integrated Terminal** - Built-in terminal for running commands
